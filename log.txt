@@ -1,0 +1,6 @@
+2024/01/29 01:18:27 Application was crashed during the unresolvable error: no args provided
+2024/01/29 01:25:04 Application was crashed during the unresolvable error: no args provided
+2024/01/29 01:25:44 Application was crashed during the unresolvable error: no args provided
+INFO: 2024/01/29 02:01:07 The application was successfully started
+INFO: 2024/01/29 02:01:45 The application was successfully started
+INFO: 2024/01/29 02:01:46 The application was successfully started
