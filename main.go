@@ -4,7 +4,6 @@ import (
 	"context"
 	"log"
 	"os"
-	"path/filepath"
 
 	"github.com/cristalhq/acmd"
 	cmd "github.com/zueffc/degenerator/commands"
@@ -38,8 +37,16 @@ func main() {
 			Name:        "list",
 			Description: "get names of all .md files from a specific directory",
 			ExecFunc: func(ctx context.Context, args []string) error {
-				path, _ := filepath.Abs(getPostsPath())
-				cmd.ListCommand(path)
+				cmd.ListCommand(getPostsPath())
+				return nil
+			},
+		},
+
+		{
+			Name:        "gen",
+			Description: "Start HTML generation from the .MD file",
+			ExecFunc: func(ctx context.Context, args []string) error {
+				cmd.GenerateCommand(getPostsPath())
 				return nil
 			},
 		},
@@ -47,7 +54,7 @@ func main() {
 
 	cmdRunner := acmd.RunnerOf(commands, acmd.Config{
 		AppName:        "Degenerator",
-		AppDescription: "Degenerator is a tool that provides foolish ability to convert markdown to html and vice resa",
+		AppDescription: "Degenerator is a tool that provides foolish ability to convert markdown to html and vice versa",
 		Version:        "0.0.1",
 	})
 

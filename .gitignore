@@ -1,4 +1,5 @@
 go.sum
 .vscode/
-posts/
+posts/*
+posts
 log.txt
