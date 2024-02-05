@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #072f40;
+}
+
+div.nav-wrapper  {
+    background-color: #d5205d;
+}
+
+div.card {
+    background-color: #0a161c !important;
+}
+
+body.post {
+    color: #dadada;
+}
+
+.row .col.s12 {
+    margin-top: -1.5%;
+}
+
+.brand-logo {
+    font-size: 1.9rem !important;
+    font-family: inherit;
+}

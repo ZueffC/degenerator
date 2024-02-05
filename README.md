@@ -8,6 +8,7 @@
     🇷🇺 <a href="README_RU.md">README на Русском</a>
 </p>
 
+### Project Description
 
 DEgenerator™ - static website generator. But there is a nuance.
 The idea for the project was born immediately after working with other generators: I wanted to make yet another generator, but my own. With its own atmosphere, so to speak.
@@ -19,3 +20,9 @@ In essence, DEgenerator (all matches with Deutschland are occasional) is a regul
 In addition, it can assemble an MD file from existing HTML code.
 
 The project is in semi-active development: if there is a minute free from studying, not occupied by another time killer, the project spews out a sheaf of sparks, and life begins to glimmer in it again. That's how we live.
+
+### What I have to do:
+- i18n
+- Normalize default template    
+- Add error checking in commands
+- Create command for html to md conversion

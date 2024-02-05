@@ -46,7 +46,7 @@ func main() {
 			Name:        "gen",
 			Description: "Start HTML generation from the .MD file",
 			ExecFunc: func(ctx context.Context, args []string) error {
-				cmd.GenerateCommand(getPostsPath())
+				cmd.GenerateCommand(getPostsPath(), getBlogName())
 				return nil
 			},
 		},
@@ -55,7 +55,7 @@ func main() {
 	cmdRunner := acmd.RunnerOf(commands, acmd.Config{
 		AppName:        "Degenerator",
 		AppDescription: "Degenerator is a tool that provides foolish ability to convert markdown to html and vice versa",
-		Version:        "0.0.1",
+		Version:        "0.1.0",
 	})
 
 	if err := cmdRunner.Run(); err != nil {

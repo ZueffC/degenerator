@@ -35,3 +35,20 @@ func getPostsPath() string {
 
 	return path
 }
+
+func getBlogName() string {
+	if !config.HasSection("settings") {
+		panic("Can't find settings section in config file")
+	}
+
+	section, _ := config.GetSection("settings")
+
+	if !section.HasKey("name") {
+		panic("Can't find path value in directory section")
+	}
+
+	iniBlogName, _ := section.GetKey("name")
+	blogName := iniBlogName.String()
+
+	return blogName
+}
