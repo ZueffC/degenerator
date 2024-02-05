@@ -2,10 +2,19 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: #072f40;
+    word-break: break-all;
 }
 
-div.nav-wrapper  {
+
+div.nav-wrapper, .page-footer {
     background-color: #d5205d;
+    padding-top: 0;
+    text-decoration: none !important;
+    color: white;
+}
+
+div.nav-wrapper ul:not(.browser-default)>li {
+    list-style-type: none !important;
 }
 
 div.card {
@@ -23,4 +32,13 @@ body.post {
 .brand-logo {
     font-size: 1.9rem !important;
     font-family: inherit;
+}
+li {
+    list-style-type: circle !important;
+}
+
+
+img {
+    border: 0;
+    max-width: -webkit-fill-available;
 }
